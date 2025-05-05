@@ -1,0 +1,315 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9f943a;
+    color: #333;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+header {
+    background-color: #ffffffcf;
+    color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#hobbies .section-intro {
+    text-align: center;
+    color: #777;
+    margin-bottom: 1.5rem;
+}
+
+.hobbies-grid {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around; 
+    width: 90%; 
+    margin: 0 auto;
+    padding: 1rem; 
+}
+
+.hobby-card {
+    background-color: #d0d06f;
+    border: 1px solid #030303;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    flex: 1; 
+    margin: 0 0.5rem; }
+
+.hobby-card:first-child {
+    margin-left: 0; /* Tanggalin ang margin sa kaliwa ng unang card */
+}
+
+.hobby-card:last-child {
+    margin-right: 0; /* Tanggalin ang margin sa kanan ng huling card */
+}
+
+.hobby-card h3 {
+    margin-top: 0;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.hobby-media {
+    max-width: 80%;
+    margin: 0 auto 0.5rem;
+    overflow: hidden;
+}
+
+.hobby-media img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+.hobby-card p {
+    color: #555;
+    font-size: 0.9rem;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+
+.hero {
+    background-image: url('images/intropic.jpg'); 
+    background-size: cover;
+    background-position: 0px; 
+    background-repeat: no-repeat; 
+    color: #fff; 
+    padding: 0;
+    text-align: center;
+    max-width: 100%; 
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 8px; 
+}
+.profile-pic {
+    width: 150px; 
+    height: 150px;
+    border-radius: 100%; 
+    object-fit: cover; 
+  }
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #fff; 
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #eee; 
+    margin-bottom: 2rem;
+}
+
+
+main {
+    padding-top: 60px;
+}
+
+.section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.about-content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content p {
+    flex: 1;
+    color: #555;
+}
+
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-info h3 {
+    margin-top: 0;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.project-info p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.project-info a {
+    display: inline-block;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.project-info a:hover {
+    color: #0056b3;
+}
+
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #444;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9rem;
+}
